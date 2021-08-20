@@ -9,10 +9,6 @@ const BubblePage = () => {
   const [colors, setColors] = useState([]);
   const [editing, setEditing] = useState(false);
 
-  useEffect(() => {
-    fetchColorService(setColors)
-  }, [])
-
   const toggleEdit = (value) => {
     setEditing(value);
    // console.log(colors)
@@ -25,6 +21,9 @@ const BubblePage = () => {
       fetchColorService(setColors);
       toggleEdit(false);
     })
+    .catch(err => {
+      console.log('saveEdit:', err)
+    })
     
   };
 
@@ -34,11 +33,18 @@ const BubblePage = () => {
       setColors(colors.filter(color => colorToDelete.id !== color.id));
       console.log('New Color List:', colors)
     })
+    .catch(err => {
+      console.log('deleteColor:', err)
+    })
 
   };
 
+  useEffect(() => {
+     fetchColorService(setColors)
+  }, [])
+
   return (
-    <div className="container">
+    <div className="container" >
       <ColorList colors={colors} editing={editing} toggleEdit={toggleEdit} saveEdit={saveEdit} deleteColor={deleteColor}/>
       <Bubbles colors={colors}/>
     </div>
