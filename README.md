@@ -45,21 +45,21 @@ Your finished project must include all of the following requirements. **Unlike o
 * [x] In `Login.js`, build all UI and state functionality needed to capture a username and password.
 * [x] Add in two routes that display the login component, one for the default path '/' and one for the login path '/login'.
 * [x] **Make sure that the input for your username and password includes the id="username" and id="password" attributes. Codegrade autotests will fail without them.**
-* [ ] Build in functionality that would allow an error to be displayed in the provided p tag if either the username or password is incorrect.
-* [ ] **Make sure your error p tag has an id="error" attribute attached. Codegrade autotests will fail without them.**
-* [ ] Construct an http request that retrieves an auth token from the server when the username `Lambda` and the password `School` is passed into the request.
-* [ ] Save the token to localStorage.
-* [ ] Build a `axiosWithAuth` module within the helpers folder to create an instance of axios with the authentication header.
-* [ ] Build a `PrivateRoute` component within the components folder and use it to protect the route that renders the `BubblesPage` component.
-* [ ] In `App.js`, build the backend to the logout button. When pressed, send an http request to the logout endpoint and remove the authentication token from localStorage. Use window.location.href to redirect to the login page.
+* [x] Build in functionality that would allow an error to be displayed in the provided p tag if either the username or password is incorrect.
+* [x] **Make sure your error p tag has an id="error" attribute attached. Codegrade autotests will fail without them.**
+* [x] Construct an http request that retrieves an auth token from the server when the username `Lambda` and the password `School` is passed into the request.
+* [x] Save the token to localStorage.
+* [x] Build a `axiosWithAuth` module within the helpers folder to create an instance of axios with the authentication header.
+* [x] Build a `PrivateRoute` component within the components folder and use it to protect the route that renders the `BubblesPage` component.
+* [x]  In `App.js`, build the backend to the logout button. When pressed, send an http request to the logout endpoint and remove the authentication token from localStorage. Use window.location.href to redirect to the login page.
 
 #### Consuming the API
 > *Add in the http requests and state changes needed to connect our api to the web application. Consider the effect of authentication on your api requests.*
 
-* [ ] In `services/fetchColorServices.js`, build out fetchColorService function to make a GET request to fetch the color data for your bubbles.
-* [ ] When `BubblePages` mounts, call fetchColorServices and save it's result in state.
-* [ ] In `BubblePage.js`, complete `saveEdit`, and `deleteColor` functions to make API requests for to editing and delete data.
-* [ ] Watch and enjoy as your app responds to updates in the data. Check out `Bubbles.js` to see how this is built.
+* [x] In `services/fetchColorServices.js`, build out fetchColorService function to make a GET request to fetch the color data for your bubbles.
+* [x] When `BubblePages` mounts, call fetchColorServices and save it's result in state.
+* [x] In `BubblePage.js`, complete `saveEdit`, and `deleteColor` functions to make API requests for to editing and delete data.
+* [x] Watch and enjoy as your app responds to updates in the data. Check out `Bubbles.js` to see how this is built.
 
 #### Testing
 * [ ] Finish the test in `Color.test.js`, `ColorList.test.js`, `BubblePage.test.js`. You will need to use rerendering, function mocking and spies in order to complete.
@@ -87,11 +87,11 @@ Your finished project must include all of the following requirements. **Unlike o
 
 ## Submission format
 
-* [ ] Submit via Codegrade by committing and pushing any new changes.
-* [ ] Submit a pull-request to merge <firstName-lastName> branch into main. **Please don't merge your own pull request and make sure you are on your own repo**
-* [ ] Check codegrade for automated feedback.
-* [ ] Check codegrade on Monday following the Sprint Challenge for reviewer feedback.
-* [ ] Any changes pushed to your <firstName-lastName> branch will resubmitted to codegrade if pushed before the sprint challenge deadline. Changes after the deadline will not be reviewed.
+* [x] Submit via Codegrade by committing and pushing any new changes.
+* [x] Submit a pull-request to merge <firstName-lastName> branch into main. **Please don't merge your own pull request and make sure you are on your own repo**
+* [x] Check codegrade for automated feedback.
+* [x] Check codegrade on Monday following the Sprint Challenge for reviewer feedback.
+* [x] Any changes pushed to your <firstName-lastName> branch will resubmitted to codegrade if pushed before the sprint challenge deadline. Changes after the deadline will not be reviewed.
 
 ## Interview Questions
 

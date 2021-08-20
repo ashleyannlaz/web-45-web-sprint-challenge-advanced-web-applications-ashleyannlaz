@@ -22,13 +22,13 @@ const Login = () => {
       setError('Username or Password not valid')
     }
 
-    axios.post('/api/login', login)
+    axios.post('http://localhost:5000/api/login', login)
     .then(res => {
       localStorage.setItem('token', res.data.payload);
       push('/bubbles');
     })
     .catch(err => {
-      console.log("Fix This!", err)
+      // console.log("Fix This!")
     })
   }
 
